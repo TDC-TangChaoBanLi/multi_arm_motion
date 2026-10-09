@@ -1,0 +1,27 @@
+trajectory_operator_plugin_name: multi_arm_hybrid_planning/IndependentProgress
+local_constraint_solver_plugin_name: multi_arm_mpc/DistanceMpc
+local_planning_frequency: 20.0
+global_solution_topic: global_trajectory
+local_solution_topic: mpc_joint_commands
+local_solution_topic_type: CUSTOM
+publish_joint_positions: true
+publish_joint_velocities: false
+monitored_planning_scene_topic: /monitored_planning_scene
+collision_object_topic: /collision_object
+joint_states_topic: /joint_states
+mpc:
+  enable_execution: false
+  horizon: 10
+  dt: 0.05
+  optimization_budget: 0.035
+  clearance: 0.025
+  influence_distance: 0.08
+  max_state_age: 0.2
+  default_acceleration: 0.5
+  command_topic: mpc_joint_commands
+  prediction_topic: /motion_predictions
+  prediction_source: local_mpc
+reference:
+  preview_horizon: 20.0
+  joint_tolerance: 0.01
+  velocity_tolerance: 0.02

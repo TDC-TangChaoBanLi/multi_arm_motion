@@ -1,0 +1,15 @@
+# Independent goals may run together when their joint sets are disjoint.
+moveit_msgs/MotionPlanRequest request
+# Overall planning and execution deadline; zero uses the configured default.
+float64 timeout
+# Optional relative-time reference, starting at t=0. Empty uses ordinary STOMP.
+# With optimize_reference=true it seeds temporal STOMP; otherwise the executor
+# validates and tracks it directly (e.g. a task's Cartesian contact path).
+trajectory_msgs/JointTrajectory reference
+bool optimize_reference
+---
+moveit_msgs/MoveItErrorCodes error_code
+string message
+---
+string phase
+float64 joint_error

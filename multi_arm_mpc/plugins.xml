@@ -1,0 +1,5 @@
+<library path="mpc_local_solver">
+  <class name="multi_arm_mpc/DistanceMpc" type="multi_arm_motion::DistanceMpc" base_class_type="moveit::hybrid_planning::LocalConstraintSolverInterface">
+    <description>Joint-space MPC with full-scene collision distance and horizon validation.</description>
+  </class>
+</library>

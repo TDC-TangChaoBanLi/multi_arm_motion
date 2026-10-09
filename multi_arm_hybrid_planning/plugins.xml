@@ -1,0 +1,5 @@
+<library path="multi_arm_trajectory_operator">
+  <class name="multi_arm_hybrid_planning/IndependentProgress" type="multi_arm_motion::IndependentProgress" base_class_type="moveit::hybrid_planning::TrajectoryOperatorInterface">
+    <description>Independent reference progress per disjoint group in one aggregate local planner.</description>
+  </class>
+</library>

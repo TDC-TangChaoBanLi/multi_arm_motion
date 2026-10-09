@@ -1,0 +1,5 @@
+<library path="multi_arm_global_planner">
+  <class name="multi_arm_hybrid_planning/StompGlobal" type="multi_arm_motion::StompGlobal" base_class_type="moveit::hybrid_planning::GlobalPlannerInterface">
+    <description>STOMP global planner preserving full requests and rejecting unsupported sequences.</description>
+  </class>
+</library>

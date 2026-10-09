@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>multi_arm_motion_core</name><version>0.1.0</version>
+  <description>Prediction validation and in-process MoveIt distance queries.</description>
+  <maintainer email="lihao_0630@qq.com">tdc</maintainer><license>BSD-3-Clause</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>multi_arm_motion_interfaces</depend><depend>moveit_core</depend>
+  <depend>rclcpp</depend><test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>urdf</test_depend><test_depend>srdfdom</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>
